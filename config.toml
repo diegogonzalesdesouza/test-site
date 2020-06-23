@@ -1,4 +1,4 @@
-baseURL = "https://www.nuveo.ai/"
+baseURL = "https://such-a-test.netlify.app"
 languageCode = "pt-br"
 DefaultContentLanguage = "pt"
 title = "Nuveo AI"
