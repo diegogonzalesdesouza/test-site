@@ -1,0 +1,36 @@
+enable : true
+title : Soluções por Setor
+description : Seja qual for o seu segmento, nossa tecnologia
+description1 : proprietária te ajudará a construir vantagem competitiva.
+productList : 
+ 
+  - icon : tf-search3
+    link : https://nuveo.ai/industries/financial-services
+    image: /images/products/ocr.gif
+    title : Financial
+
+  - icon : tf-ion-monitor
+    link : https://nuveo.ai/industries/gov
+    image: /images/products/ocr.gif
+    title : Governmental
+
+  - icon : tf-adjustments
+    link : https://nuveo.ai/industries/health
+    image: /images/products/ocr.gif
+    title : Health
+
+  - icon : tf-notebook9
+    link : https://nuveo.ai/industries/smart-city
+    image: /images/products/ocr.gif
+    title : Smart City
+
+  - icon : tf-notebook9
+    link : https://nuveo.ai/industries/pharma
+    image: /images/products/ocr.gif
+    title : Pharmaceutical
+
+  - icon : tf-notebook9
+    link : https://nuveo.ai/industries/retail
+    image: /images/products/ocr.gif
+    title : Retail
+  

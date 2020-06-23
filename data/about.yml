@@ -1,0 +1,19 @@
+enable : true
+heading : Sobre
+headingSpan : Nós
+aboutItem : 
+
+- icon : tf-anchor2
+  image : images/about/MenorimpactoemTI.png
+  title : Menor impacto na sua TI
+  content : Implante IA no seu negócio sem grande necessidade de customizações, bastam simples integrações.
+
+- icon : tf-focus
+  image : images/about/Tecnologiaproprietaria.png
+  title : Tecnologia proprietária
+  content : Nossos PhDs pesquisam e desenvolvem diariamente as técnicas mais sofisticadas de Inteligência Artificial.
+
+- icon : tf-strategy
+  image : images/about/BPMtoBPD.png
+  title : Inteligência Artificial na prática
+  content : Utilize Inteligência Artificial de forma intuitiva para construir vantagem competitiva.

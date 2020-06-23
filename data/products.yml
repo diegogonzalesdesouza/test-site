@@ -1,0 +1,36 @@
+enable : true
+image : images/backgrounds/ultra-ocr.webp
+title : Nossos produtos
+description : Automatizamos tudo para que seu time possa focar no que gera mais valor.
+description1 : Seja em ambiente cloud ou on-premises, estamos prontos.
+productList : 
+ 
+  - icon : tf-search3
+    link : https://nuveo.ai/ultra-ocr
+    image: /images/products/ultra-ocr.png
+    odd: "mr-lg-5"
+    title : Ultra OCR®
+    content : O Ultra OCR®, patenteado pela Nuveo, é o sistema de reconhecimento de caracteres, palavras ou termos em imagens ou PDFs. Os sofisticados algoritmos de tratamento de imagem garantem uma eficácia de reconhecimento muito maior que a média de mercado.
+
+  - icon : tf-ion-monitor
+    link : https://nuveo.ai/ai-studio
+    image: /images/products/ai-studio.svg
+    odd: "flex-row-reverse ml-lg-5"
+    title : AI Studio
+    content : O Machine Learning (ML) e o Natural Language Processing (NLP) são as tecnologias para aprendizado, interpretação e tomada de decisão através de documentos. Quanto maior o número de informações processados, maior é a acuracidade do sistema. 
+
+  - icon : tf-adjustments
+    link : https://nuveo.ai/zoe
+    image: /images/products/smart-vision.svg
+    odd: "mr-lg-5"
+    title : Smart Vision
+    content : O Robotic Process Automation (RPA) é o componente responsável por automatizar busca e validação de informações, estejam elas em sites, bases de dados ou sistemas internos do negócio. Esse mesmo RPA insere o resultado das análises nos sistemas da empresa.
+
+  - icon : tf-notebook9
+    link : https://nuveo.ai/hub/veiculos
+    image: /images/products/hub.svg
+    odd: "flex-row-reverse ml-lg-5"
+    title : Hub
+    content : O Nuveo Core é uma arquitetura de processamento paralelo em cloud extremamente escalável e elástica. A infraestrutura da Nuveo se adapta ao volume de transações que devem ser processados, redimensionando o número de CPUs conforme demanda.
+    
+  

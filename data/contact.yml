@@ -1,0 +1,29 @@
+enable : true
+heading : Fale
+headingSpan : Conosco
+enable_maps : false
+mapLatitude : -23.554117
+mapLongitude: -46.662224
+title : São Paulo
+contactDetails :
+  - icon : tf-map-pin
+    info : "R. da Consolação, 2302 - Consolação, São Paulo - SP, 01301-000"
+    url : "https://goo.gl/maps/6cXLeuhWXQX6X5JG8"
+
+  - icon : tf-ion-ios-telephone-outline
+    info : "Tel: +55 (11) 4780-9328"
+    
+  - icon : tf-ion-ios-email-outline
+    info : "Email: contato@nuveo.ai"
+title1 : João Pessoa
+contactDetails1 :
+  - icon : tf-map-pin
+    info : "R. José Bernardino, 97 - Vila Cabral, Campina Grande - PB, 58408-027"
+    url : "https://g.page/NuveoPB?share"
+
+  - icon : tf-ion-ios-telephone-outline
+    info : "Tel: +55 (11) 4780-9328"
+    
+  - icon : tf-ion-ios-email-outline
+    info : "Email: contact@nuveo.ai"
+        

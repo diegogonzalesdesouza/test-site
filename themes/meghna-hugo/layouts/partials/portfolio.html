@@ -1,0 +1,49 @@
+
+<!-- old portfolio -->
+{{ if .Site.Data.portfolio.enable}}
+{{"<!-- Portfolio Section -->" | safeHTML}}
+<section class="portfolio section" id="portfolio">
+    <div class="container">
+        <div class="row ">
+            <div class="col-xl-12">
+                {{"<!-- section title -->" | safeHTML}}
+                <div class="title text-center">
+                    <h2> {{ with .Site.Data.portfolio.heading }} {{ . }} {{ end }} <span class="color">{{ with .Site.Data.portfolio.headingSpan }} {{ . }} {{ end }}</span></h2>
+                    <div class="border-meghna"></div>
+                </div>
+                {{"<!-- /section title -->" | safeHTML}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portfolio-filter">
+                    <button type="button" data-filter="all">Todos</button>
+                    {{ range .Site.Data.portfolio.filterList }}
+                    <button type="button" data-filter="{{ .filterType }}">{{ .filterTitle }}</button>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="row filtr-container content-center">
+            {{"<!-- portfolio item -->" | safeHTML}}
+            {{ range .Site.Data.portfolio.portfolioItem }}
+
+            <!-- <div class="col-lg-3 filtr-item" data-category="{{ .types }}">
+                <div class="mb-4">
+                        <h4 class="title-portfolio text-center">{{ .title }} </h4> 
+                    <div class="service-block portfolio-content text-center "><p class="text-portfolio">{{ .description }}</p></div>
+                </div>
+            </div> -->
+            <div class="col-lg-3 col-md-4 col-sm-6 filtr-item" data-category="{{ .types }}" >
+                    <h4 class="title-portfolio text-center">{{ .title }} </h4> 
+
+                <div class="portfolio-content text-center text-portfolio"> 
+                    {{ .description }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{"<!-- /Portfolio -->" | safeHTML}}
+{{ end }}

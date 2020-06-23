@@ -1,0 +1,36 @@
+{{ if .Site.Params.counter.enable }}
+{{"<!-- Start Counter Section -->" | safeHTML}}
+<section id="counter" class="parallax-section section-bg section">
+    <div class="container align-items-center">
+        <div class="col-lg-12 text-center mb-5 title">
+            <h2 class="font-weight-light text-decoration-none">Alguns de nossos clientes</h2>
+        </div>
+        <div class="row justify-content-md-center align-items-center align-middle clients-obj">
+            <div class="col-lg-2 col-md-6 col-sm-12 align-middle wow fadeInUp" data-wow-duration="500ms">
+                    <img class="clients-img" src="images/clients/bradesco.png"></img>
+            </div>
+            <div class="col-lg-2 col-md-6  col-sm-12 wow fadeInUp" data-wow-duration="500ms">
+                    <img class="clients-img"src="images/clients/vivo.png"></img>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="500ms">
+                    <img class="clients-img" src="images/clients/cyrela.png"></img>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="500ms">
+                    <img class="clients-img" src="images/clients/claro.png"></img>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="500ms">
+                    <img class="clients-img" src="images/clients/eurofarma.png"></img>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="500ms">
+                    <img class="clients-img" src="images/clients/epson.png"></img>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="{{ .Site.Params.cta.btnURL }}" class="clients-button btn btn-main">{{ with .Site.Params.cta.btnText }} {{ . }} {{end}}</a>
+            </div>
+        </div> -->
+    </div>
+</section>
+{{"<!-- /Counter Section -->" | safeHTML}}
+{{ end }}

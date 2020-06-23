@@ -1,0 +1,120 @@
+baseURL = "https://www.nuveo.ai/"
+languageCode = "pt-br"
+DefaultContentLanguage = "pt"
+title = "Nuveo AI"
+theme = "meghna-hugo"
+summaryLength = 10
+
+[taxonomies]
+  author = "author"
+  category = "categories"
+  tag = "tags"
+
+# Menu
+[menu]
+    # [[menu.nav]]
+    # name = "Sobre a Nuveo"
+    # URL = "#about"
+    # weight = 2
+
+    [[menu.nav]]
+    name = "Produtos"
+    url = "#produtos"
+    weight = 3
+
+    [[menu.nav]]
+    name = "Setores"
+    URL = "#industries"
+    weight = 4
+
+    # [[menu.nav]]
+    # name = "Blog"
+    # URL = "#blog"
+    # weight = 5
+
+    [[menu.nav]]
+    name = "Recursos"
+    URL = "#resources"
+    weight = 5
+
+    # [[menu.nav]]
+    # name = "Equipe"
+    # URL = "#equipe"
+    # weight = 6
+
+    # [[menu.nav]]
+    # name = "Notícias"
+    # URL = "#noticias"
+    # weight = 7
+
+    [[menu.nav]]
+    name = "Contato"
+    URL = "#contact-us"
+    weight = 8
+
+# Site params
+[params]
+home= "Home"
+logo = "images/logo.png"
+logoBlue = "images/logo-blue.png"
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+# Meta data
+description = "Digital Transformation through Artificial Intelligence"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+custom_css = ["css/custom.css"]
+
+    # Banner Section
+    [params.banner]
+    enable = true
+    bgImage = "images/slider/dev.jpeg"
+    icon = "tf-ion-play"
+    heading = "Digital Transformation through AI"
+    content= "Deploying state-of-the-art technologies to solve real world problems."
+    btn = false
+    btnText="Entenda melhor"
+    btnURL="#servicos"
+
+    # call to action
+    [params.cta]
+    enable = true
+    title = "Entenda tudo o que a Nuveo pode fazer por sua empresa."
+    content = "Fale com nossos consultores."
+    btnURL = "#contact-us"
+    btnText = "Agende uma visita"
+
+    # counter
+    [params.counter]
+    enable = true
+        [[params.counter.counterItem]]
+        title = "Some of our clients"
+        icon = "tf-ion-android-happy"
+        count = "320"
+
+        [[params.counter.counterItem]]
+        title = "Projects completed"
+        icon = "tf-ion-archive"
+        count = "565"
+
+        [[params.counter.counterItem]]
+        title = "Positive feedback"
+        icon = "tf-ion-thumbsup"
+        count = "95"
+
+        [[params.counter.counterItem]]
+        title = "Cups of Coffee"
+        icon = "tf-ion-coffee"
+        count = "2500"
+
+    # footer
+    [params.footer]
+        copyright = "Nuveo Technologies"
+        badge = "images/badges/nvidia.png"
+
+        [[params.footer.socialIcon]]
+        url = "https://linkedin.com/company/nuveo"
+        icon = "tf-ion-social-linkedin"
+
+        [[params.footer.socialIcon]]
+        url = "https://instagram.com/nuveoai"
+        icon = "tf-ion-social-instagram"

@@ -1,0 +1,51 @@
+enable : true
+heading : Nossa
+headingSpan : Equipe
+teamMember :
+  - image : images/team/FlavioPereira.webp
+    name : Flavio Pereira
+    designation : CEO/Founder
+    description : Executivo e empreendedor com experiência em Desenvolvimento de negócios, Vendas, Marketing, Marketing Digital, Operações, Tecnologia da informação e Gestão Financeira. Significante experiência internacional, tendo performado cargos executivos de vendas e marketing na América Latina por dois anos.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/joseflaviopereira/"
+
+  - image : images/team/LeonardoSoares.webp
+    name : Leonardo Soares
+    designation : CFO
+    description : Formado em Engenharia de Produção pela Universidade Federal de Sâo Carlos e com especialização pela Columbia University, com mais de cinco anos no mercado de serviços financeiros e de locação estratégicas de investimentos nacionais e internacionais, desenvolvendo fortes habilidades em venture capital. Desenvolve hoje na Nuveo o papel de estrategista de desenvolvimento, gestão de caixa e facilitador de negócios.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/leonardogonzalezsoares/"
+  
+  - image : images/team/AntonioCarlosSenra.webp
+    name : Antonio Carlos Senra
+    designation : CTO
+    description : Doutor pela USP e King's College, experiência na área de engenharia biomédica, física médica e computação aplicada, com ênfase em Processamento de Imagens. Atualmente atua no desenvolvimento de sistemas inteligentes aplicados ao processamento de documentos/imagens digitais, através de sistema de Machine Learning em geral e da liderança do nosos time de doutores e engenheiros de software.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/acsenrafilho/"
+
+  - image : images/team/LucasMagrin.webp
+    name : Lucas Magrin
+    designation : CPO
+    description : Vivência na estruturação de produtos em ambientes embrionários por meio de gestão ágil e práticas de inovação. Experiência B2B, B2C e B2B2C e atuação em soluções de entretenimento (games, vídeos, livros e realidade aumentada), educação, finanças, alimentos e inteligência artificial.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/lucasmagrin/"
+
+  - image : images/team/RobertoLellis.webp
+    name : Roberto Lellis
+    designation : CSO
+    description : Executivo com 25 anos de vivência em liderança de equipes comerciais com atuação em soluções de BPO e BPM com foco na eficiência de processos. Experiências em empresas como Iron Mountain, TIVIT, GE Information Services e New Space. Graduado em Engenharia Elétrica pela FEI, com MBA em Marketing pela ESPM.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/robertolellis/"
+ 
+  - image : images/team/GizeleDelboni.webp
+    name :  Gizele Delboni
+    designation : CHRO
+    description : Graduada em Psicologia pela Universidade Federal de Minas Gerais. Mais de 7 anos de experiência na área de Recursos Humanos. Experiência com estruturação de todos os subsistemas da área de Pessoas e consolidação de uma cultura forte. Atua na formalização e concretização da cultura Nuveo e administrando nosso excepcional time.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/gizele-delboni-25891b89/"

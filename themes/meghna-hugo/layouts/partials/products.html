@@ -1,0 +1,33 @@
+{{ if .Site.Data.products.enable }}
+{{"<!-- produtos -->" | safeHTML}}
+<section id="produtos" class="section bg-white about-2 padding-0 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="py-5 col-lg-12">
+                <div class="content-block title">
+                    {{with .Site.Data.products.title}} <h2 class="font-weight-light pb-2">{{ . }}</h2> {{ end }}
+                    {{with .Site.Data.products.description}} <span>{{ . }}</span><br> {{ end }}
+                    {{with .Site.Data.products.description1}} <span>{{ . }}</span> {{ end }}
+                    <div class="row pt-4 d-flex">
+                        {{ range .Site.Data.products.productList }}
+                        <div class="product-button row bg-white border-0 text-left">
+                            <div class="media row d-flex align-items-center p-lg-4 wow fadeInUp {{ with .odd }}{{.}}{{ end }}">
+                                <img class="product-illustration col-md-6 rounded-lg m-md-4" src="{{ with .image }}{{.}}{{ end }}"></img>    
+                                <div class="media-body col-md-6 ml-md-4 mt-4 mb-5 mb-lg-4">
+                                    <div class="media-content">
+                                        {{with .title}} <h3 class="media-heading">{{ . }}</h3>{{ end }}
+                                        {{ with .content}} <p>{{ . }}</p> {{ end }}
+                                    </div>
+                                    <a class="btn-main mt-3" href="{{ with .link }}{{.}}{{ end }}">Know More</a>    
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- produtos -->" | safeHTML}}
+{{ end }}

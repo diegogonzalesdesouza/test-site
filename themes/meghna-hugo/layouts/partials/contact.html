@@ -1,0 +1,132 @@
+{{ if .Site.Data.contact.enable }}
+{{"<!-- Start Contact Us -->" | safeHTML}}
+<section id="contact-us" class="contact-us section bg">
+    <div class="container py-5">
+        <div class="row">
+            {{"<!-- section title -->" | safeHTML}}
+            <div class="col-lg-12">
+                <div class="title text-center pb-5">
+                    <h2 class="text-white font-weight-light">{{ with .Site.Data.contact.heading }} {{ . }} {{ end }}{{ with .Site.Data.contact.headingSpan }} {{ . }} {{ end }}</h2>
+                </div>
+            </div>
+            {{"<!-- /section title -->" | safeHTML}}
+
+            {{"<!-- Contact Details -->" | safeHTML}}
+            <div class="contact-info title col-lg-6">
+                {{ with .Site.Data.contact.title }}<h3 class="pb-3 text-white">{{ . }}</h3> {{ end }}
+                <div class="contact-details">
+                    {{ range .Site.Data.contact.contactDetails }}
+                    <div class="con-info clearfix">
+                        <i class="{{ .icon }}"></i>
+                        {{ if .url }}
+                            <a href="{{ .url }}" class="map" target="_blank">{{ .info }}</a>
+                        {{ else }}
+                            <span>{{ .info }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    <br>
+                    {{ with .Site.Data.contact.title1 }}<h3 class="pb-3 text-white">{{ . }}</h3> {{ end }}
+                    {{ range .Site.Data.contact.contactDetails1 }}
+                    <div class="con-info clearfix">
+                        <i class="{{ .icon }}"></i>
+                        {{ if .url }}
+                            <a href="{{ .url }}" class="map" target="_blank">{{ .info }}</a>
+                        {{ else }}
+                            <span>{{ .info }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            {{"<!-- Contact Form -->" | safeHTML}}
+            <div class="col-lg-6">
+                <form class="form-meghna" target="_self" enctype="multipart/form-data" action="https://formkeep.com/f/b4d05dedf3a4" accept-charset="UTF-8" method="post">
+                    <input name="utf8" type="hidden" value="✓">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="E-mail" class="form-control" name="_replyto" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefone ex.: (22) 55555-4444" class="form-control" name="phone" id="phone" required title="Formato: (22) 55555-4444" minlength="15" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto" class="form-control" name="subject" id="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Mensagem" class="form-control" name="message"
+                            id="message"></textarea>
+                    </div>
+                    <input type="hidden" name="_language" value="pt-BR" />
+                    <input type="hidden" name="_subject" value="Mensagem do site nuveo.ai" />
+                    <div id="mail-success" class="success">
+                        Obrigado! O email enviado com sucesso :)
+                    </div>
+                    <div id="mail-fail" class="error">
+                        Desculpe, não sei o que aconteceu. Tente novamente :(
+                    </div>
+                    <div id="cf-submit">
+                        <input type="submit" class="btn btn-transparent" value="Enviar">
+                    </div>
+                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" value="03AOLTBLQk0EjliQg2aHWQsm_WbmGclo9R7X5a0DehByEGstMADXBGh0PVlEMUP1rmeaGjKvYs-YC5yOE4FbAgpo9FWphFwvOh378gS1x_BG3NvbE2MSM7oGIX7ko4SVUZBmkbgGcVxRUZn5IGXckvO_yG_BNBPPvnhS1btuZJEQyhHxaMha4MA1YTTkjxWVDrucUi7vfZ0kzxHIZFou4bvY-n7Z_B-wBByZ-asf7Doxsnio3a8jflIQ4VNsT1ujvyi2fTtt12O_-nUEgTVeBAjhtEwlpJXbMQzw7v1hBjCxGLdXcke6bdyPoDY05gWqIye72YLTPTTA-rHB2yeO6ebudJ8lNUBg_335rhq9AakuCh4d_mTADT5ZpFlGwTIobxVGon7l5JG4pelZ4MOJfHyOJNzwhygXCVME9HbTT2KS5MtUU6YswLRF4tVo3AXIBTZsv0a1WqZmDwCXie-op6ZZZTnXztUOq9_QPPAYTJQWfYolFBXNQ80T0">
+                </form>
+              
+                <script type="text/javascript">
+                    function mask(o, f) {
+                      setTimeout(function () {
+                          var v = mphone(o.value);
+                          if (v != o.value) {
+                              o.value = v;
+                          }
+                      }, 1);
+                    }
+                    function mphone(v) {
+                      var r = v.replace(/\D/g,"");
+                      r = r.replace(/^0/,"");
+                      if (r.length > 10) {
+                          // 11+ digits. Format as 5+4.
+                          r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/,"($1) $2-$3");
+                      }
+                      else if (r.length > 5) {
+                          // 6..10 digits. Format as 4+4
+                          r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/,"($1) $2-$3");
+                      }
+                      else if (r.length > 2) {
+                          // 3..5 digits. Add (0XX..)
+                          r = r.replace(/^(\d\d)(\d{0,5})/,"($1) $2");
+                      }
+                      else {
+                          // 0..2 digits. Just add (0XX
+                          r = r.replace(/^(\d*)/, "($1");
+                      }
+                      return r;
+                    }
+                  
+                    var searchParams = window.location.hash.substr(1);
+                    if(searchParams.includes('success')) {
+                        var div = document.createElement('div');
+                        div.id = 'success';
+                        div.className = 'clients-button btn btn-main'; 
+                        div.style.cssText = 'position: absolute; z-index: 999; width: 50%; top:70px; margin: 0 auto; left: 0; right: 0; border: 2px solid #ccc';
+                        div.innerHTML = 'Contato enviado com sucesso!';
+                        document.body.appendChild(div);
+
+                        setTimeout(function() {
+                            div.remove();
+                        }, 5000);
+                    }
+
+                  </script>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="mapDiv" style="width: auto; height: 300px; "></div> -->
+
+    <!-- {{"Open Map" | safeHTML}} -->
+		<!-- <script defer type="text/javascript" src="{{ "plugins/open-map/map-script.js" | absURL}}"></script> -->
+</section>
+{{"<!-- /contact -->" | safeHTML}}
+{{ end }}

@@ -1,0 +1,34 @@
+{{ if .Site.Data.industries.enable }}
+{{"<!-- industries -->" | safeHTML}}
+<section id="industries" class="section section-bg about-2 padding-0 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="py-5 col-lg-12">
+                <div class="content-block title">
+                    {{with .Site.Data.industries.title}} <h2 class="font-weight-light pb-2">{{ . }}</h2> {{ end }}
+                    {{with .Site.Data.industries.description}} <span>{{ . }}</span><br> {{ end }}
+                    {{with .Site.Data.industries.description1}} <span>{{ . }}</span> {{ end }}
+                    <div class="row pt-5">
+                        {{ range .Site.Data.industries.productList }}
+                        <a href="{{ with .link }}{{.}}{{ end }}" style="display: contents; position: relative;">
+                            <button class="industry-button col-lg-2 section-bg border-0">
+                                <div class="industry text-center">
+                                    <div class="align-self-start mb-3">
+                                        {{with .icon}} <i class="{{ . }}"></i> {{ end }}
+                                    </div>
+                                    <div class="industry-media-body">
+                                        {{with .title}} <h5 class="media-heading">{{ . }}</h5>{{ end }}
+                                        {{ with .content}} <p>{{ . }}</p> {{ end }}
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- industries -->" | safeHTML}}
+{{ end }}
