@@ -16,40 +16,52 @@ summaryLength = 10
     # name = "Sobre a Nuveo"
     # URL = "#about"
     # weight = 2
+    # children = false
 
     [[menu.nav]]
     name = "Produtos"
     url = "#produtos"
+    children = false
     weight = 3
 
     [[menu.nav]]
     name = "Setores"
     URL = "#industries"
+    children = false
     weight = 4
 
     # [[menu.nav]]
     # name = "Blog"
     # URL = "#blog"
     # weight = 5
+    # children = false
 
     [[menu.nav]]
-    name = "Recursos"
-    URL = "#resources"
-    weight = 5
+    name = "Blog"
+    parent = "Recursos"
+    URL = "https://medium.com/nuveo"
+    
+    [[menu.nav]]
+    name = "Notícias"
+    parent = "Recursos"
+    URL = "https://nuveo.ai/news"
 
     # [[menu.nav]]
     # name = "Equipe"
     # URL = "#equipe"
     # weight = 6
+    # children = false
 
     # [[menu.nav]]
     # name = "Notícias"
     # URL = "#noticias"
     # weight = 7
+    # children = false
 
     [[menu.nav]]
     name = "Contato"
-    URL = "#contact-us"
+    URL = "https://nuveo.ai/contact-us"
+    children = false
     weight = 8
 
 # Site params
@@ -59,7 +71,8 @@ logo = "images/logo.png"
 logoBlue = "images/logo-blue.png"
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 # Meta data
-description = "Digital Transformation through Artificial Intelligence"
+# description_EN = "Digital Transformation through Artificial Intelligence"
+description = "Inteligência Artificial para Transformação Digital"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 custom_css = ["css/custom.css"]
@@ -69,15 +82,17 @@ custom_css = ["css/custom.css"]
     enable = true
     bgImage = "images/slider/dev.jpeg"
     icon = "tf-ion-play"
-    heading = "Digital Transformation through AI"
-    content= "Deploying state-of-the-art technologies to solve real world problems."
+    # heading_EN = "Digital Transformation through AI"
+    heading = "IA para Transformação Digital"
+    # content= "Deploying state-of-the-art technologies to solve real world problems."
+    content= "Tecnologia best-in-class para resolver problemas de grandes empresas."
     btn = false
     btnText="Entenda melhor"
     btnURL="#servicos"
 
     # call to action
     [params.cta]
-    enable = true
+    enable = false
     title = "Entenda tudo o que a Nuveo pode fazer por sua empresa."
     content = "Fale com nossos consultores."
     btnURL = "#contact-us"
@@ -109,7 +124,7 @@ custom_css = ["css/custom.css"]
     # footer
     [params.footer]
         copyright = "Nuveo Technologies"
-        badge = "images/badges/nvidia.png"
+        badge = "../images/badges/nvidia.png"
 
         [[params.footer.socialIcon]]
         url = "https://linkedin.com/company/nuveo"

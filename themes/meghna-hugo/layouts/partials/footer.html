@@ -37,7 +37,7 @@
 				<h5 class="title white font-weight-bold">Contact</h5>
 				{{ if .Site.Data.contact.enable }}
 				<ul class="list-group">
-					<li class="list-inline-item"><a class="text-nuveo" href="#">{{ with .Site.Data.contact.heading }} {{ . }} {{ end }}{{ with .Site.Data.contact.headingSpan }} {{ . }} {{ end }}</a></li>
+					<li class="list-inline-item"><a class="text-nuveo" href="{{ $.Site.BaseURL }}contact">{{ with .Site.Data.contact.heading }} {{ . }} {{ end }}{{ with .Site.Data.contact.headingSpan }} {{ . }} {{ end }}</a></li>
 				</ul>
 				{{ end }}
 				<h5 class="title white font-weight-bold mt-4">Legal</h5>

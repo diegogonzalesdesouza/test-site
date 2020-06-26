@@ -546,6 +546,7 @@ a:hover {
 
 .on-scroll {
   background-color: #292f36f5;
+  box-shadow: 0px 0px 12px #000;
 }
 
 .navigation .logo {
@@ -654,7 +655,6 @@ a:hover {
 .hero-area .block h1 {
   font-size: 75px;
   color: #fff;
-  text-transform: capitalize;
   font-weight: 700;
   margin-top: 8rem;
   margin-bottom: 20px;
@@ -662,7 +662,7 @@ a:hover {
 
 .hero-area .block p {
   color: #fff;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 300 !important;
   width: 80%;
   margin: 0 auto;
@@ -877,6 +877,16 @@ a:hover {
 
 .industry-button:focus {
   outline: none;
+}
+
+/*Industry icons*/
+#custom-icon {
+  width: 70px !important;
+  display: inline-block;
+}
+
+.industry-button:hover #custom-icon {
+  fill: #6ec4c5 !important;
 }
 
 /*=================================================================

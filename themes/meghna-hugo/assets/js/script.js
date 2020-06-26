@@ -16,7 +16,7 @@ jQuery(function ($) {
 
 	// Change nav/header background color on scroll
 	$(window).on("scroll", function() {
-	    if($(window).scrollTop() > 250) {
+	    if($(window).scrollTop() > 150) {
 	        $("#navigation").addClass("on-scroll");
 	    } else {
 	        //remove the background property so it comes transparent again (defined in your css)

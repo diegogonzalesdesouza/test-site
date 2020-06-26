@@ -4,33 +4,27 @@ description : Seja qual for o seu segmento, nossa tecnologia
 description1 : proprietária te ajudará a construir vantagem competitiva.
 productList : 
  
-  - icon : tf-search3
+  - icon : /images/icons/financial.svg
     link : https://nuveo.ai/industries/financial-services
-    image: /images/products/ocr.gif
-    title : Financial
+    title : Financial Services
 
-  - icon : tf-ion-monitor
+  - icon : images/icons/gov.svg
     link : https://nuveo.ai/industries/gov
-    image: /images/products/ocr.gif
-    title : Governmental
+    title : Governamental
 
-  - icon : tf-adjustments
+  - icon : images/icons/health.svg
     link : https://nuveo.ai/industries/health
-    image: /images/products/ocr.gif
-    title : Health
+    title : Saúde
 
-  - icon : tf-notebook9
+  - icon : images/icons/smart-city.svg
     link : https://nuveo.ai/industries/smart-city
-    image: /images/products/ocr.gif
     title : Smart City
 
-  - icon : tf-notebook9
+  - icon : images/icons/pharmaceutical.svg
     link : https://nuveo.ai/industries/pharma
-    image: /images/products/ocr.gif
-    title : Pharmaceutical
+    title : Farmacêutica
 
-  - icon : tf-notebook9
+  - icon : images/icons/retail.svg
     link : https://nuveo.ai/industries/retail
-    image: /images/products/ocr.gif
-    title : Retail
+    title : Varejo
   

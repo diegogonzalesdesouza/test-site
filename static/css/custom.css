@@ -80,6 +80,44 @@
     } 
 }
 
+/*Dropdown menu*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #292f36f5 !important;
+  min-width: 160px;
+  box-shadow: 0 0 20px #000000ab;
+  z-index: 1;
+}
+
+.dropdown:hover {
+  cursor: default;
+}
+
+.dropdown:hover .nav-link {
+  color: #fff !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  padding-top: .5em;
+  z-index: 0;
+}
+
+.dropdown-content .nav-item {
+    padding: 6px 12px;
+}
+
+.dropdown-content .nav-item:hover {
+    background-color: #12151742;
+    opacity: 0.8;
+}
+
 
 /*Sobre nós icons*/
 
