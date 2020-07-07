@@ -1,4 +1,11 @@
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KS5XZSZ');</script>
+    <!-- End Google Tag Manager -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{else if .IsPage}}{{ .Summary | plainify}}{{ else }}{{.Site.Params.description}}{{ end }}">
     <meta name="author" content="{{ with .Params.author }}{{ . }}{{else}}{{ with .Site.Params.author}}{{ . }}{{ end }}{{end}}">
@@ -7,12 +14,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ hugo.Generator }}
 
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{" | "}}{{ .Site.Params.Description }}{{ else if .IsPage}}{{ .Title }}{{" | "}}{{ .CurrentSection.Title }}{{else if eq .Section "author" }}{{if .Params.name}}{{.Params.name}} | {{ i18n "authorOfPostsOnBlog" }} „{{.Site.Title}}" {{else}}{{ i18n "authorsOfPostsOnBlog" }} „{{.Site.Title}}"{{end}}{{else if eq .Section "blog" }}{{ i18n "blogs" }} | {{ .Site.Title}}{{else}}{{ .Title }}{{with .Params.Description}}{{" | " .}}{{ end }}{{ end }}</title>
-
+    <title>
+        {{ if .IsHome }}
+            {{ .Site.Title }}{{" | "}}{{ .Site.Params.Description }}
+        {{ else if .IsPage}}
+            {{ .Title }}{{" | "}}{{ .CurrentSection.Title }}
+        {{else if eq .Section "author" }}
+            {{if .Params.name}}
+                {{.Params.name}} | {{ i18n "authorOfPostsOnBlog" }} „{{.Site.Title}}"
+            {{else}}
+                {{ i18n "authorsOfPostsOnBlog" }} „{{.Site.Title}}"
+            {{end}}
+        {{else if eq .Section "blog" }}
+            {{ i18n "blogs" }} | {{ .Site.Title}}
+        {{else}}
+            {{ .Site.Title }}{{" | "}}{{ .Title }}
+        {{ end }}
+    </title>
 
     {{"<!-- Favicon -->" |safeHTML}}
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ "images/favicon.ico" | absURL }}"/> -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    {{ if .IsHome }}
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    {{ else }}
+        <link rel="shortcut icon" type="image/x-icon" href="{{ "images/favicon.png" | absURL }}"/>
+    {{ end }}
 
     {{"<!-- CSS -->"|safeHTML}}
     {{"<!-- Fontawesome Icon font -->"|safeHTML}}

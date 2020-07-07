@@ -18,7 +18,6 @@
                 {{"<!-- /responsive nav button -->" | safeHTML}}
 
                 {{"<!-- main nav -->" | safeHTML}}
-                {{ if .IsHome }}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto navigation-menu">
                                 <!-- <li class="nav-item">
@@ -33,29 +32,35 @@
                                                         <div class="dropdown-content">
                                                                 {{ range .Children }}
                                                                         <li class="nav-item">
-                                                                                <a class="nav-link text-white" href="{{ .URL }}">{{ .Name }}</a>
+                                                                                {{ if eq .Name "Notícias" }}
+                                                                                        <a class="nav-link text-white" href="{{ $.Site.BaseURL }}news">{{ .Name }}</a>
+                                                                                {{ else }}
+                                                                                        <a class="nav-link text-white" href="{{ $.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
+                                                                                {{ end }}
                                                                         </li>
                                                                 {{ end }}
                                                         </div>
                                                 </div>
                                         {{ else }}
                                                 <li class="nav-item">
-                                                        <a class="nav-link" data-scroll href="{{ .URL }}">{{ .Name }}</a>
+                                                        {{ if eq .Name "Contato" }}
+                                                                <a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}contact">{{ .Name }}</a>
+                                                        {{ else }}
+                                                                <a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
+                                                        {{ end }}
                                                 </li>
                                         {{ end }}
                                 {{ end }}
                         </ul>
                 </div>
-                {{ else }}
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto navigation-menu">
                                 <li class="nav-item"><a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}#body">{{ with $.Site.Params.home }}{{ . }}{{ end }}</a></li>
                                 {{ range $.Site.Menus.nav }}
                                 <li class="nav-item"><a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}#{{ .URL }}">{{ .Name }}</a></li>
                                 {{ end }}
                         </ul>
-                </div>
-                {{ end }}
+                </div> -->
                 {{"<!-- /main nav -->" | safeHTML}}
         </div>
 

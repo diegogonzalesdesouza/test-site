@@ -2,29 +2,27 @@ enable : true
 title : Soluções por Setor
 description : Seja qual for o seu segmento, nossa tecnologia
 description1 : proprietária te ajudará a construir vantagem competitiva.
-productList : 
- 
-  - icon : /images/icons/financial.svg
+list : 
+  - icon : financial
     link : https://nuveo.ai/industries/financial-services
     title : Financial Services
 
-  - icon : images/icons/gov.svg
+  - icon : gov
     link : https://nuveo.ai/industries/gov
     title : Governamental
 
-  - icon : images/icons/health.svg
+  - icon : health
     link : https://nuveo.ai/industries/health
     title : Saúde
 
-  - icon : images/icons/smart-city.svg
+  - icon : smart-city
     link : https://nuveo.ai/industries/smart-city
     title : Smart City
 
-  - icon : images/icons/pharmaceutical.svg
+  - icon : pharmaceutical
     link : https://nuveo.ai/industries/pharma
     title : Farmacêutica
 
-  - icon : images/icons/retail.svg
+  - icon : retail
     link : https://nuveo.ai/industries/retail
     title : Varejo
-  

@@ -14,7 +14,7 @@
                         {{with .Site.Data.contact_call_to_action.description}} <span>{{ . }}</span><br> {{ end }}
                         {{with .Site.Data.contact_call_to_action.description1}} <span>{{ . }}</span> {{ end }}
                     </div>
-                    <a href="{{ .Site.Data.contact_call_to_action.link }}" class="btn-main mt-5">{{with .Site.Data.contact_call_to_action.button_text}}{{ . }}{{ end }}</a>
+                    <a href="{{ $.Site.BaseURL }}{{ .Site.Data.contact_call_to_action.link }}" class="btn-main mt-5">{{with .Site.Data.contact_call_to_action.button_text}}{{ . }}{{ end }}</a>
                 </div>
             </div>
         </div>

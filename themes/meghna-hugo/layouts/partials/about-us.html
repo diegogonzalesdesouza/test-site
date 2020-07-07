@@ -1,0 +1,24 @@
+{{ if .Site.Data.about_us.enable }}
+{{"<!-- Start About Us -->" | safeHTML}}
+<section id="about-us" class="about-us section">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+	        <div class="col-lg-6">
+            	{{"<!-- section title -->" | safeHTML}}
+	            <div class="title text-center mt-3 mb-5">
+	              	<h2 class=" font-weight-light text-white">{{ with .Site.Data.about_us.title }} {{ . }} {{ end }}</h2>
+	              	<div class="border-meghna"></div>
+	            </div>
+	            {{"<!-- /section title -->" | safeHTML}}
+	            <div class="body text-center">
+	            	<p>Acreditamos em um mundo com soluções de inteligência artificiais ao alcance de todos. Trabalhamos para empoderar pessoas, através da automação de tarefas repetitivas e consequente liberação de tempo para que elas possam focar em assuntos mais importantes.</p>
+
+					<p>A Nuveo nasceu de uma iniciativa voluntária para a ONG Lar das Crianças, em janeiro de 2016. Desde então temos dezenas de funcionários distribuídos em três centros de operações: São Paulo, Campina Grande e Toronto.</p>
+
+					<p>Nossa empresa é obcecada por tecnologia de ponta. Somos comprometidos com a pluralidade e oportunidades iguais. Nossos produtos mudam a vida de pessoas e como elas trabalham e realizam seus sonhos. Buscamos pessoas que queiram construir o futuro da tecnologia, através de seu talento, paixão, coragem e que estejam dispostas a fortalecer as idéias umas das outras.</p>
+	            </div>
+	        </div>
+        </div>
+    </div>
+</section>
+{{ end }}

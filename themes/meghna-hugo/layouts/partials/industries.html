@@ -9,13 +9,15 @@
                     {{with .Site.Data.industries.description}} <span>{{ . }}</span><br> {{ end }}
                     {{with .Site.Data.industries.description1}} <span>{{ . }}</span> {{ end }}
                     <div class="row pt-5">
-                        {{ range .Site.Data.industries.productList }}
+                        {{ range .Site.Data.industries.list }}
                         <a href="{{ with .link }}{{.}}{{ end }}" style="display: contents; position: relative;">
                             <button class="industry-button col-lg-2 section-bg border-0">
                                 <div class="industry text-center">
                                     <div class="align-self-start mb-3">
                                         {{ with .icon }}
-                                            <div id="custom-icon" style="content: url({{ . }})"></div>
+                                            {{ $icon := . }}
+                                            {{ $path := printf "svgs/%s.svg" $icon }}
+                                            {{ partial $path (dict "fill" "#01589B") }}
                                         {{ end }}
                                     </div>
                                     <div class="industry-media-body">
