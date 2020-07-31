@@ -1,29 +1,28 @@
 enable : true
-image : images/backgrounds/ultra-ocr.webp
 title : Nossos produtos
 description : Automatizamos tudo de ponta-a-ponta para seu time focar no que gera mais valor.
 description1 : Seja em ambiente cloud ou on-premises, estamos prontos.
 productList : 
  
--   link : https://nuveo.ai/ultra-ocr
+-   link : /ultra-ocr
     image: /images/products/ultra-ocr.svg
     odd: "mr-lg-5"
     title : Ultra OCR®
     content : O Ultra OCR®, patenteado pela Nuveo, é o sistema de reconhecimento de caracteres, palavras ou termos em imagens ou PDFs. Os sofisticados algoritmos de tratamento de imagem garantem uma eficácia de reconhecimento muito maior que a média de mercado.
 
--   link : https://nuveo.ai/ai-studio
+-   link : /ai-studio
     image: /images/products/ai-studio.svg
     odd: "flex-row-reverse ml-lg-5"
     title : AI Studio
     content : AI Studio é uma plataforma AIaaS, que permite a criação de algoritmos de Machine Learning de forma intuitiva. Dessa forma, empresas e desenvolvedores conseguem produzir soluções de alto impacto sem grandes conehcimentos em IA.
 
--   link : https://nuveo.ai/zoe
+-   link : /zoe
     image: /images/products/smart-vision.svg
     odd: "mr-lg-5"
     title : Smart Vision
     content : Identifique identidade, monitore fluxo de pessoas, fiscalize distanciamento social e utilização de máscaras. O SmartVision é uma ferramenta robusta e customizável para a detecção de objetos específicos de seu interesse.
 
--   link : https://nuveo.ai/hub/veiculos
+-   link : /hub/veiculos
     image: /images/products/hub.svg
     odd: "flex-row-reverse ml-lg-5"
     title : HUBx

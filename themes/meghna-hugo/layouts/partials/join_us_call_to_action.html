@@ -1,0 +1,24 @@
+{{ if .Site.Data.join_us_call_to_action.enable }}
+{{"<!-- contact_call_to_action -->" | safeHTML}}
+<section id="contact_call_to_action" class="section section-bg-blue about-2 padding-0 text-center">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="my-5 col-lg-5 overflow-hidden">
+                <div class="py-5 h-100" style="background-image: url('{{ .Site.Data.contact_call_to_action.image }}'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+                </div>
+            </div>
+            <div class="py-5 my-5 col-lg-6">
+                <div class="content-block title text-left">
+                    {{with .Site.Data.join_us_call_to_action.title}} <h2 class="font-weight-light pb-4 text-white">{{ . }}</h2> {{ end }}
+                    <div class="pl-3" style="border-left: 3px solid #6ec4c5;">
+                        {{with .Site.Data.join_us_call_to_action.description}} <span>{{ . }}</span><br> {{ end }}
+                        {{with .Site.Data.join_us_call_to_action.description1}} <span>{{ . }}</span> {{ end }}
+                    </div>
+                    <a href="{{ $.Site.BaseURL }}{{ .Site.Data.join_us_call_to_action.link }}" class="btn-main mt-5">{{with .Site.Data.join_us_call_to_action.button_text}}{{ . }}{{ end }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- contact_call_to_action -->" | safeHTML}}
+{{ end }}

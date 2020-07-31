@@ -1,0 +1,25 @@
+{{"<!-- Start About Us -->" | safeHTML}}
+<section id="product-banner" class="gradient-primary-secondary section">
+    <div class="container py-5">
+        <div class="row justify-content-start">
+	        <div class="col-lg-6">
+            	{{"<!-- section title -->" | safeHTML}}
+	            <div class="title text-left mt-5 pt-5 mb-2">
+	            	<!-- Gets the product name from the page which called this partial -->
+	            	{{$productName := (.Scratch.Get "productName")}}
+	            	<h1 class="text-white mt-4 pb-2">
+	            		<!-- Gets params based on the given product name -->
+	            		{{ with $.Param (printf "productBanner.%s" $productName) }} {{ .title }} {{ end }}
+	            	</h1>
+	            </div>
+	            {{"<!-- /section title -->" | safeHTML}}
+	            <div class="h5 lh-3 ls-1 text-left text-white">
+	            	{{ with $.Param (printf "productBanner.%s" $productName) }} {{ .subtitle }} {{ end }}
+	            </div>
+	        </div>
+	        <div class="col-lg-6">
+            	<img class="col-md-12 ml-5 mt-4 pt-2 position-absolute" src='{{ with $.Param (printf "productBanner.%s" $productName) }} {{ .image }} {{ end }}'></img>    
+	        </div>
+        </div>
+    </div>
+</section>

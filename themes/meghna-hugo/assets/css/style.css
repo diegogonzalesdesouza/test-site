@@ -115,8 +115,16 @@ a:hover {
   padding: 0 !important;
 }
 
-.mb-50{
+.mb-50 {
   margin-bottom: 50px;
+}
+
+.lh-3 {
+  line-height: 1.6em;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
 }
 
 .btn {
@@ -169,6 +177,14 @@ a:hover {
   margin: 15px auto 0;
   position: relative;
   width: 30%;
+}
+
+.border-meghna-left {
+  border-top: 2px solid rgba(236, 239, 241, 0.27);
+  height: 1px;
+  margin: 25px 0 0px 0;
+  position: relative;
+  width: 10%;
 }
 
 /*.border-meghna:before {
@@ -421,6 +437,13 @@ a:hover {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
   }
+}
+
+.title h1 {
+  font-weight: 500;
+  font-size: 65px;
+  color: #4a4a4a;
+  text-shadow: 1px 0px #fff
 }
 
 .title h2 {
@@ -855,6 +878,10 @@ a:hover {
 .product-illustration {
   padding-top: 5px;
   /*box-shadow: 0px 0px 3em rgba(0, 0, 0, 0.2);*/
+}
+
+.gradient-primary-secondary {
+  background-image: linear-gradient(155deg,#292f36,#6ec4c5);
 }
 
 /*=================================================================

@@ -1,0 +1,30 @@
+<section id="produtos" class="section bg-white about-2 padding-0 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="py-5 col-lg-12">
+                <div class="content-block title">
+                    <!-- Gets the product name from the page which called this partial -->
+                    {{$productName := (.Scratch.Get "productName")}}
+                    {{ with $.Param (printf "productBanner.%s" $productName) }}<h2 class="font-weight-light pt-4 pb-2">{{ .descriptionTitle }}</h2> {{ end }}
+                    {{ with $.Param (printf "productBanner.%s" $productName) }}<h5 class="px-5 pt-3 lh-3">{{ .descriptionSubtitle }}</h5>{{ end }}
+                    <div class="row pt-4 d-flex">
+                        {{ range $.Param (printf "productBanner.%s.features" $productName) }}
+                        <div class="product-button row bg-white border-0 text-left">
+                            <div class="media row d-flex align-items-center p-lg-4 wow fadeInUp {{ with .margin }}{{.}}{{ end }}">
+                                <img class="product-illustration col-md-6 rounded-lg m-md-4" src="{{ with .image }}{{.}}{{ end }}"></img>    
+                                <div class="media-body col-md-6 ml-md-4 mt-4 mb-5 mb-lg-4">
+                                    <div class="media-content">
+                                        {{with .featureName}} <h3 class="media-heading">{{ . }}</h3>{{ end }}
+                                        {{with .featureDescription}} <p>{{ . }}</p> {{ end }}
+                                    </div>
+                                    <a class="btn-main mt-3" href="{{ with .link }}{{.}}{{ end }}">Know More</a>    
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

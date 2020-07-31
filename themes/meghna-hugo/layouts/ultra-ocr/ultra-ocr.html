@@ -1,0 +1,16 @@
+{{ define "main" }}
+	
+	{{ partial "preloader.html" . }}
+
+    {{ partial "logo.html" . }}
+
+    {{ partial "navigation.html" . }}
+
+	{{ .Scratch.Set "productName" "ultraOcr" }}
+	{{ partial "product-banner.html" . }}
+
+	{{ partial "product-description.html" . }}
+
+	{{ partial "contact_call_to_action.html" . }}
+
+{{ end }}

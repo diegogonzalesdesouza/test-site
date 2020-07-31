@@ -99,6 +99,28 @@ custom_css = ["css/custom.css"]
     btnURL = "#contact-us"
     btnText = "Agende uma visita"
 
+    # product banners
+    [params.productBanner]
+        [params.productBanner.ultraOcr]
+        title = "Ultra OCR®"
+        subtitle = "Extraia texto instantaneamente a partir de qualquer documento impresso ou escrito a mão."
+        image = "/images/products/smart-vision.svg"
+        descriptionTitle = "Automação end-to-end"
+        descriptionSubtitle = "Nossa tecnologia proprietária com performance inigualável possui modelos que permites extração de texto nas condições mais adversas."
+            [[params.productBanner.ultraOcr.features]]
+            image = "/images/products/ultra-ocr.svg"
+            margin = "mr-lg-5"
+            featureName = "Such feature"
+            featureDescription = "Nossa tecnologia proprietária com performance inigualável possui modelos que permites extração de texto nas condições mais adversas."
+            [[params.productBanner.ultraOcr.features]]
+            image = "/images/products/smart-vision.svg"
+            margin = "flex-row-reverse ml-lg-5"
+            featureName = "Blabla feature"
+            featureDescription = "A nossa tecnologia proprietária com performance inigualável possui modelos que permites extração de texto nas condições mais adversas."
+
+        [params.productBanner.aiStudio]
+        title = "AISSS"
+
     # counter
     [params.counter]
     enable = true
